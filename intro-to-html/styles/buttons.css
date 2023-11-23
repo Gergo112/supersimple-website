@@ -1,0 +1,76 @@
+/*minden element, aminek ez az osztálya*/
+.subscribe-button {
+  background-color: rgb(200, 0, 0);
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 2px;
+  cursor: pointer; /*a pointer kézzé változik*/
+  margin-right: 8px;
+  transition: opacity 0.2s; /*mit akarok lassítani és mennyivel, ezt mindig az alaphoz adjuk*/
+  vertical-align: top; /*minden a tetejére megy*/
+}
+
+
+.subscribe-button:hover{ /*amikor a gomb fölé visszük*/
+  opacity: 0.75; /*mennyire átlátszó 1-0 között, minél kisebb, annál kevésbé átlátszó*/
+}
+
+.subscribe-button:active{
+  opacity: 0.4;
+}
+
+.join-button{
+  background-color: white;
+  border-color: rgb(23, 146, 218);
+  border-style: solid; /*mindenhol ugyanolyan a keret*/
+  border-width: 1px;
+  color: rgb(23, 146, 218);
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 18px; /*padding jobb mint a width és a height*/
+  padding-right: 18px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s; /*egyszerre többet is lehet, vesszővel*/
+  vertical-align: top;
+}
+
+
+.join-button:hover{
+  background-color: rgb(23, 146, 218);
+  color: white;
+}
+
+.join-button:active{
+  background-color: rgb(23, 146, 218);
+  color: white;
+  opacity: 0.6;
+}
+
+.tweet-button{
+  background-color: rgb(11, 170, 209);
+  color: white;
+  border: none;
+  height: 35px;
+  width: 80px;
+  border-radius: 18px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: box-shadow 0.15s;
+  vertical-align: top;
+}
+
+.tweet-button:hover{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /*árnyék: vízszintes, függőleges, blur, szín*/
+  /*rgba(): negyedik paraméter --> tompítja a színt*/
+}
+
+.tweet-button:active{
+  opacity: 0.6;
+}
